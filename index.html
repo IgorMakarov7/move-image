@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Tool Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="toolbar">
+    <div class="toolbar-item" title="Перчатки">
+        <div class="toolbar-icon">🧤</div>
+    </div>
+    <div class="toolbar-item" title="Шлем">
+        <div class="toolbar-icon">👷‍♂️</div>
+    </div>
+    <div class="toolbar-item" title="Жилет">
+        <div class="toolbar-icon">🦺</div>
+    </div>
+    <div class="toolbar-item" title="Очки">
+        <div class="toolbar-icon">👓</div>
+    </div>
+    <div class="toolbar-item" title="Защитные очки">
+        <div class="toolbar-icon">🥽</div>
+    </div>
+</div>
+
+<div class="canvas-container">
+    <div class="canvas" id="canvas">
+        <!-- Копии иконок будут перетаскиваться сюда -->
+    </div>
+</div>
+
+<button id="downloadBtn">Готово</button>
+
+<script src="libs/html2canvas.min.js"></script>
+<script src="libs/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

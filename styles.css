@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none; /* Отключаем выделение текста */
+}
+.toolbar {
+  display: flex;
+  background-color: #333;
+  padding: 10px;
+  width: 512px;
+  justify-content: space-around;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.toolbar-item {
+  color: white;
+  text-align: center;
+  position: relative;
+  flex: 1;
+  cursor: grab;
+}
+.toolbar-item:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #555;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.toolbar-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 2px dashed #ccc;
+  position: relative;
+}
+.canvas {
+  position: relative;
+  background-size: cover;
+}
+.draggable {
+  position: absolute;
+  cursor: move;
+}
+#downloadBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
